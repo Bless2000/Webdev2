@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/dark.css">
+    <script src="https://kit.fontawesome.com/49fc8451ac.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    
+    <title>Dark-Theme</title>
+</head>
+<body>
+    <nav>
+        <img src="../imgs/5526265.jpg" alt="" class="logo">
+
+        <ul class="list">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Dishes</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <img src="../imgs/moon.png" alt="" id="theme">
+
+        <button class="book">Book Table</button>
+       
+
+    </nav>
+
+    <section class="init">
+        <div class="col_1">
+            <h2>The flavour of <span>Tradition</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, hic! Fugiat veniam reiciendis beatae ipsum at a enim ipsa, sint earum voluptates cum ad repellendus, dolorum aliquam quidem reprehenderit. Praesentium.</p>
+            <div class="buttons">
+                <button class="exp">Book Table</button>
+                <button class="exp">Explore Menu</button>
+            </div>
+        </div>
+        
+        <div class="col_2">
+            <img src="../imgs/food img1.jpg" alt="" class="img1">
+            <div class="2img">
+            <img src="../imgs/food img2.jpg" alt="" class="img2">
+            <img src="../imgs/food img3.jpg" alt="" class="img3">
+            </div>
+        </div>
+    </section>
+
+    <section class="mid">
+        <div class="card">
+            <i class="fa-solid fa-clock"></i>
+            <p class="p_c">9am - 7pm</p>
+            <p class="p_s">Working Hours</p>
+        </div>
+       
+        <div class="card">
+            <i class="fa-solid fa-address-book"></i>
+            <p class="p_c">B207/09</p>
+            <p class="p_s">Address</p>
+        </div>
+       <div class="card">
+        <i class="fa-solid fa-phone"></i>
+        <p class="p_c">+233242605912</p>
+            <p class="p_s">Call Us</p>
+       </div>
+
+    </section>
+
+    <div class="specials">
+        <div class="imgs">
+            <img src="../imgs/pizza.jpg" alt="" class="sp">
+            <img src="../imgs/jollof.jpg" alt="" class="sp">
+            <img src="../imgs/bbq.jpg" alt="" class="sp">
+        </div>
+
+        <div class="txt">
+            <h2>Our Specials</h2>
+            <p class="lorem">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque voluptas ea harum dolor voluptatem aperiam debitis illo repellendus eius iure exercitationem dolorem suscipit fugiat ipsa quis, mollitia quo molestiae quisquam.
+            </p>
+        </div>
+       </div>
+       
+    <footer>
+
+    </footer>
+
+    <script>
+
+            var dark = document.getElementById("theme");
+            theme.onclick = function(){
+                document.body.classList.toggle("dark_theme");
+                if(document.body.classList.contains("dark_theme")){
+                    theme.src = "../imgs/sun.png";
+                }
+                else{
+                    theme.src = "../imgs/moon.png";
+                }
+            }
+
+    </script>
+
+</body>
+</html>
